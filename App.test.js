@@ -15,7 +15,7 @@ it('renders correctly', () => {
   expect(wrapper.find('#test').length).toEqual(1);
 })
 
-it('renders correctly', () => {
+it('renders #foo correctly', () => {
   const wrapper = shallow(<App />)
   expect(wrapper.find('#foo').length).toEqual(0);
 })
