@@ -1,5 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme'
+import { Text } from 'react-native'
+import { shallow, mount } from 'enzyme'
 import App from './App';
 
 import renderer from 'react-test-renderer';
@@ -11,5 +12,5 @@ it('renders without crashing', () => {
 
 it('renders correctly', () => {
   const wrapper = shallow(<App />)
-  expect(wrapper.find('Text').length).toEqual(3);
+  expect(wrapper.find('#test').length).toEqual(1);
 })
